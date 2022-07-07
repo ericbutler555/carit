@@ -2,7 +2,7 @@
   box-sizing: border-box;
 }
 html {
-  font-size: 62.5%;
+  font-size: 62.5%; /* make 1rem = 10px without affecting accessibility needs */
 }
 body {
   margin: 0;
@@ -12,7 +12,7 @@ body {
 }
 img {
   display: block;
-  max-width: 100%;
+  max-width: 100%; /* allow responsive image sizing without overflowing its parent */
 }
 a {
   color: #77897a;
@@ -20,7 +20,7 @@ a {
 h2 {
   margin: 3rem 0 1rem;
   color: #5e515c;
-  font-family: 'League Gothic', sans-serif;
+  font-family: 'League Gothic', system-ui, -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
   font-size: 5rem;
   letter-spacing: 0.02em;
 }
@@ -57,24 +57,24 @@ hr {
   margin: 1rem 2rem;
 }
 .site-title {
-  flex: 1;
-  font-family: 'League Gothic', sans-serif;
+  flex: 1; /* let site title fill all empty space in the header */
+  font-family: 'League Gothic', system-ui, -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
   font-size: 3.6rem;
   line-height: 1;
   text-transform: uppercase;
 }
 .header-nav {
-  align-self: stretch;
+  align-self: stretch; /* take up all vertical room in the header */
   display: flex;
   margin-left: 1rem;
 }
 .header-nav a {
   display: flex;
-  align-items: center;
+  align-items: center; /* center link text vertically */
   padding: 2rem;
   border-left: 1px solid #d4c7c7;
   color: white;
-  font-family: 'League Gothic', sans-serif;
+  font-family: 'League Gothic', system-ui, -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
   font-size: 2.4rem;
   text-transform: uppercase;
   text-decoration: none;
@@ -101,7 +101,7 @@ hr {
 }
 .footer-nav ul {
   display: flex;
-  justify-content: center;
+  justify-content: center; /* keep links horizontally centered in footer */
   gap: 2rem;
   list-style: none;
   margin: 0 0 3rem;
@@ -118,21 +118,21 @@ hr {
 .footer-nav a:hover,
 .footer-nav a:focus {
   border-bottom-color: white;
-  transform: translateY(-2px);
+  transform: translateY(-2px); /* animate link slightly when targeted */
 }
 
 /* PAGE TITLES */
 
 .page-image {
-  margin: -2rem -4rem;
+  margin: -2rem -4rem; /* negate the white space caused by its container padding */
 }
 .page-title {
-  margin-top: -8.2rem;
+  margin-top: -8.2rem; /* raise the title up into/over the page image */
 }
 .page-title h1 {
   margin: 0 0 2rem;
   color: white;
-  font-family: 'League Gothic', sans-serif;
+  font-family: 'League Gothic', system-ui, -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
   font-size: 10rem;
   line-height: 1;
   letter-spacing: 0.02em;
@@ -167,7 +167,7 @@ hr {
 }
 .news-item-headline {
   margin: 1.4rem 0 1rem;
-  font-family: 'League Gothic', sans-serif;
+  font-family: 'League Gothic', system-ui, -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
   font-size: 2.4rem;
   font-weight: normal;
   line-height: 1;
@@ -187,6 +187,7 @@ hr {
   font-size: 1.2rem;
   font-weight: bold;
 }
+/* create a fake line that stretches the empty space */
 .news-item-date::before {
   content: '';
   flex: 1;
@@ -203,7 +204,7 @@ hr {
 }
 .faculty-member {
   display: flex;
-  align-items: flex-start;
+  align-items: flex-start; /* keep elements top-aligned instead of stretched */
   gap: 3rem;
   margin-top: 1.5rem;
   padding: 3rem 0 1.5rem;
@@ -215,6 +216,7 @@ hr {
 }
 .faculty-member-info {
   flex: 1 1 75%;
+  width: 75%;
 }
 .faculty-member-name {
   margin: 0 0 0.4rem;
@@ -237,7 +239,7 @@ hr {
 }
 .faculty-member-info p {
   display: flex;
-  align-items: flex-start;
+  align-items: flex-start; /* simple way to keep icons from taking up more space than they should */
   margin: 0 0 1rem;
 }
 .faculty-member-info p img {
@@ -271,7 +273,7 @@ th {
 }
 .event {
   display: flex;
-  align-items: flex-start;
+  align-items: flex-start; /* keep contents top-aligned instead of vertically stretched */
   gap: 3rem;
   margin-top: 1.5rem;
   padding: 3rem 0 1.5rem;
@@ -279,16 +281,18 @@ th {
 }
 .event-info {
   flex: 1 1 60%;
+  width: 60%;
 }
 .event-image {
   flex: 1 1 40%;
+  width: 40%;
 }
 .event p {
   margin: 0 0 1.5rem;
 }
 .event-title {
   margin: 0 0 1.5rem;
-  font-family: 'League Gothic', sans-serif;
+  font-family: 'League Gothic', system-ui, -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
   font-size: 3rem;
   font-weight: normal;
   line-height: 1;
@@ -297,7 +301,7 @@ th {
 }
 .event-date {
   display: flex;
-  justify-content: flex-start;
+  justify-content: flex-start; /* simple way to keep icons from taking up more space than they should */
   align-items: center;
   gap: 1.5rem;
 }
@@ -308,7 +312,7 @@ th {
   border: 0;
   background-color: #969a8b;
   color: white;
-  font-family: 'League Gothic', sans-serif;
+  font-family: 'League Gothic', system-ui, -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
   font-size: 2rem;
   text-transform: uppercase;
   letter-spacing: 0.06em;
@@ -333,13 +337,13 @@ th {
   padding-right: 2rem;
 }
 .apply-step-1 select {
-  flex: 1;
+  flex: 1; /* fill any empty space */
   width: 100%;
   padding: 0.5rem;
   font-size: 100%;
 }
 .apply-step-2 {
-  display: none; /* hide by default, show with javascript */
+  display: none; /* hide by default, will reveal with javascript */
   margin-bottom: 4rem;
 }
 .apply-step-2 select {
