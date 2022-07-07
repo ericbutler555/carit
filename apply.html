@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Apply Now | Center for Applied Research in Information Technology</title>
+    <meta name="description" content="Apply now to join the CARIT team! We have student assistant position open frequently." />
+    <meta property="og:image" content="img/solar-building.jpg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=League+Gothic&display=swap" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <script defer src="js/scripts.js"></script>
+  </head>
+  <body>
+    <div class="site-wrapper">
+      <!-- GLOBAL SITE HEADER STARTS HERE -->
+      <header class="site-header">
+        <div class="site-logo">
+          <a href="http://ccse.kennesaw.edu/it" target="_blank"><img src="img/logo.svg" width="100" alt="Logo" /></a>
+        </div>
+        <span class="site-title">The Center for Applied Research in Information Technology</span>
+        <nav class="header-nav">
+          <a href="index.html">Homepage</a>
+          <a href="faculty.html">Our Faculty</a>
+          <a href="events.html">Events</a>
+          <a href="apply.html" class="current-page">Apply</a>
+        </nav>
+      </header>
+      <!-- GLOBAL SITE HEADER ENDS HERE -->
+      <main class="site-body">
+        <!-- CUSTOM PAGE CONTENT STARTS HERE -->
+        <section class="page-content">
+          <div class="page-image">
+            <img src="img/center-building.jpg" alt="View of the CARIT building with solar panels in the foreground" />
+          </div>
+          <div class="page-title">
+            <h1>Apply Now</h1>
+          </div>
+          <p>Thank you for your interest in working at CARIT! We currently have <strong>4</strong> student assistant positions open. If you would like to apply, we first need to get some information from you about the college coursework you've completed.</p>
+          <p><strong>Instructions:</strong> Select the option from the drop-down menu that best describes your current student standing. The page should then present you with a series of courses you've taken. Please enter the grades you've received for each of these courses. Then just click the Evaluate button.</p>
+          <p>Thanks again for your interest in CARIT!</p>
+          <hr />
+          <div class="apply-step-1">
+            <label for="studentStatus">Your Current Student Standing</label>
+            <select id="studentStatus">
+              <option value="0">Select...</option>
+              <option value="1">Freshman</option>
+              <option value="2">Sophomore</option>
+              <option value="3">Junior</option>
+              <option value="4">Senior</option>
+            </select>
+          </div>
+          <div class="apply-step-2">
+            <form id="eligibilityForm">
+              <table>
+                <thead>
+                  <tr>
+                    <th>College Course</th>
+                    <th>Your Grade</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="course-item-1">&nbsp;</td>
+                    <td>
+                      <select name="course-grade-1">
+                        <option value="4">A</option>
+                        <option value="3">B</option>
+                        <option value="2">C</option>
+                        <option value="1">D</option>
+                        <option value="0">F</option>
+                      </select>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="course-item-2">&nbsp;</td>
+                    <td>
+                      <select name="course-grade-2">
+                        <option value="4">A</option>
+                        <option value="3">B</option>
+                        <option value="2">C</option>
+                        <option value="1">D</option>
+                        <option value="0">F</option>
+                      </select>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="course-item-3">&nbsp;</td>
+                    <td>
+                      <select name="course-grade-3">
+                        <option value="4">A</option>
+                        <option value="3">B</option>
+                        <option value="2">C</option>
+                        <option value="1">D</option>
+                        <option value="0">F</option>
+                      </select>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="course-item-4">&nbsp;</td>
+                    <td>
+                      <select name="course-grade-4">
+                        <option value="4">A</option>
+                        <option value="3">B</option>
+                        <option value="2">C</option>
+                        <option value="1">D</option>
+                        <option value="0">F</option>
+                      </select>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <button type="submit" class="button-link">Evaluate</button>
+            </form>
+          </div>
+          <hr />
+          <div class="apply-result"></div>
+        </section>
+        <!-- CUSTOM PAGE CONTENT ENDS HERE -->
+      </main>
+      <!-- GLOBAL SITE FOOTER STARTS HERE -->
+      <footer class="site-footer">
+        <nav class="footer-nav">
+          <ul>
+            <li><a href="index.html">Homepage</a></li>
+            <li><a href="faculty.html">Our Faculty</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="apply.html">Apply</a></li>
+          </ul>
+        </nav>
+        <p>
+          Website code and design copyright &copy;2022 by Eric Butler. All rights reserved.<br />
+          This website was created as a class project for <a href="http://it5443.azurewebsites.net" target="_blank">Kennesaw State University</a>.<br />
+          Logo art by <a href="https://www.vecteezy.com/members/marsono">Mrson graphic</a> on <a href="https://www.vecteezy.com/free-vector/web">Vecteezy</a>.
+        </p>
+      </footer>
+      <!-- GLOBAL SITE FOOTER ENDS HERE -->
+    </div>
+  </body>
+</html>
