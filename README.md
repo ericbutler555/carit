@@ -1,6 +1,6 @@
 # CARIT Website Assignment
 
-Live demo site: [https://ericbutler-ksu-it3203.azurewebsites.net/](https://ericbutler-ksu-it3203.azurewebsites.net/)
+Live demo site: [https://ericbutler555.github.io/carit/](https://ericbutler555.github.io/carit/)
 
 This is a fake website project assigned to me for my IT 3203 "Intro to Web Development" course at Kennesaw State University in July 2022.
 
